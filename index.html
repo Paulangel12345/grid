@@ -64,6 +64,35 @@
     h3 {
       margin-top: 40px;
     }
+/* 🔹 Media Query for Mobile Devices (≤768px) */
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-areas:
+          "header"
+          "nav"
+          "main"
+          "right"
+          "footer";
+        grid-template-columns: 1fr; /* single column layout */
+      }
+
+      .header, .nav, .main, .right, .footer {
+        padding: 15px;
+        font-size: 16px;
+      }
+
+      .header {
+        font-size: 20px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+
+      h3 {
+        margin-top: 20px;
+      }
+    }
   </style>
 </head>
 <body>

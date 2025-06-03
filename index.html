@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "nav main right"
+        "footer footer footer";
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 10px;
+      padding: 10px;
+      
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #add8e6;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav {
+      grid-area: nav;
+      background-color: #f08080;
+      padding: 20px;
+    }
+
+    .main {
+      grid-area: main;
+      background-color: #90ee90;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    .right {
+      grid-area: right;
+      background-color: #ffa07a;
+      padding: 20px;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #dda0dd;
+      padding: 20px;
+      text-align: center;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px ;
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">My Sample Webpage Layout Using CSS Grid</div>
+
+    <div class="nav">
+      <h3>Navigation</h3>
+      <a href="#section1">Introduction</a>
+      <a href="#section2">Features</a>
+      <a href="#section3">Benefits</a>
+      <a href="#section4">Applications</a>
+      <a href="#section5">Conclusion</a>
+    </div>
+
+    <div class="main">
+      <h3 id="section1">Introduction</h3>
+      <p>CSS Grid Layout is a modern technique used to design two-dimensional layouts on the web. It helps in placing elements into rows and columns efficiently and cleanly.</p>
+
+      <h3 id="section2">Features</h3>
+      <ul>
+        <li>Two-dimensional control (rows and columns)</li>
+        <li>Easy alignment and spacing with <code>gap</code></li>
+        <li>Supports named areas for clarity</li>
+        <li>Responsive design flexibility</li>
+      </ul>
+
+      <h3 id="section3">Benefits</h3>
+      <p>With CSS Grid, layouts are more intuitive and require less code. Developers no longer need to rely heavily on floats or flexbox workarounds for page structure.</p>
+      <p>It also allows designers to separate content and layout logic, keeping the HTML semantic and clean.</p>
+
+      <h3 id="section4">Applications</h3>
+      <p>CSS Grid is widely used in:</p>
+      <ul>
+        <li>Blog layouts</li>
+        <li>Dashboards</li>
+        <li>Gallery displays</li>
+        <li>News websites</li>
+        <li>Portfolio pages</li>
+      </ul>
+      <p>Its flexibility makes it ideal for both small projects and complex, large-scale websites.</p>
+
+      <h3 id="section5">Conclusion</h3>
+      <p>CSS Grid is an essential tool for any modern front-end developer. Its clear syntax, two-dimensional design control, and power to create responsive, maintainable layouts make it one of the best layout techniques available.</p>
+    </div>
+
+    <div class="right">
+      <h3>Sidebar</h3>
+      <p><strong>Note:</strong> Don't forget to revise all CSS Grid properties:</p>
+      <ul>
+        <li>grid-template-areas</li>
+        <li>grid-template-columns</li>
+        <li>grid-area</li>
+        <li>gap</li>
+      </ul>
+      <p>Contact: teacher@example.com</p>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Web Design Lab. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
